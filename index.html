@@ -7,42 +7,91 @@
     <style>
       body {
         font-family: Arial, sans-serif;
-        text-align: center;
         margin: 0;
         padding: 0;
-        background-color: #f4f4f4;
+        background: linear-gradient(135deg, #003366, #0055a5);
+        color: #fff;
       }
       header {
-        background-color: #003366;
-        color: white;
-        padding: 20px 0;
+        text-align: center;
+        padding: 60px 20px 20px;
+      }
+      header h1 {
+        font-size: 3em;
+        margin-bottom: 0.5em;
+      }
+      header p {
+        font-size: 1.2em;
+        margin-top: 0;
       }
       section {
-        padding: 20px;
+        background-color: white;
+        color: black;
+        padding: 40px 20px;
+        margin: 20px;
+        border-radius: 10px;
+      }
+      section h2 {
+        color: #003366;
       }
       footer {
-        background-color: #003366;
-        color: white;
-        padding: 10px 0;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9em;
+        background-color: #002244;
+        margin-top: 40px;
+      }
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 40px;
+      }
+      .feature-card {
+        background: #f4f4f4;
+        color: #333;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 2em;
+        }
       }
     </style>
   </head>
   <body>
     <header>
       <h1>WealthToolsAI</h1>
-      <p>AI-Powered Wealth Planning for Your Future</p>
+      <p>AI-Powered Financial Planning for Your Future</p>
     </header>
+
     <section>
-      <h2>Smart Portfolio Analysis</h2>
-      <p>Optimize your investments in real-time with AI-driven insights.</p>
-      <h2>Retirement Planning</h2>
-      <p>Plan your perfect retirement using intelligent forecasting tools.</p>
-      <h2>Tax Optimization</h2>
-      <p>Minimize your taxes legally and efficiently with smart strategies.</p>
+      <h2>Our Mission</h2>
+      <p>
+        At WealthToolsAI, we are building the smartest financial tools powered by Artificial Intelligence — designed to help you plan, invest, and retire with confidence.
+      </p>
     </section>
+
+    <section class="features">
+      <div class="feature-card">
+        <h2>Smart Portfolio Analysis</h2>
+        <p>Analyze your investments and get optimization suggestions in real-time.</p>
+      </div>
+      <div class="feature-card">
+        <h2>AI Retirement Planning</h2>
+        <p>Plan the perfect retirement using intelligent forecasting and simulations.</p>
+      </div>
+      <div class="feature-card">
+        <h2>Tax Optimization Strategies</h2>
+        <p>Reduce your tax burden legally and efficiently with AI-guided advice.</p>
+      </div>
+      <div class="feature-card">
+        <h2>Real-Time Insights</h2>
+        <p>Stay ahead with powerful, real-time analysis of financial opportunities.</p>
+      </div>
+    </section>
+
     <footer>
       <p>© 2025 WealthToolsAI. All rights reserved.</p>
     </footer>
